@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест по курсу - Настасья Белочкина</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Возражение "Дорого"</h1>
+            <p class="subtitle">Модуль 3 • Тема 10 • Методология HyperScript</p>
+        </header>
+
+        <div id="quiz-container" class="quiz-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress"></div>
+            </div>
+
+            <div class="question-counter">
+                <span id="current-question">1</span> / <span id="total-questions">5</span>
+            </div>
+
+            <div id="question-card" class="question-card">
+                <h2 id="question-text" class="question-text"></h2>
+                <div id="answers" class="answers"></div>
+                <button id="submit-answer" class="btn btn-primary" disabled>Ответить</button>
+            </div>
+
+            <div id="feedback-card" class="feedback-card hidden">
+                <div class="feedback-content">
+                    <div id="feedback-icon" class="feedback-icon"></div>
+                    <h3 id="feedback-title" class="feedback-title"></h3>
+                    <p id="feedback-text" class="feedback-text"></p>
+                </div>
+                <button id="next-question" class="btn btn-primary">Следующий вопрос</button>
+            </div>
+
+            <div id="results-card" class="results-card hidden">
+                <div class="results-content">
+                    <div class="results-icon">🎉</div>
+                    <h2>Тест завершен!</h2>
+                    <div class="score-display">
+                        <span id="final-score" class="score-number">0</span>
+                        <span class="score-label">из <span id="max-score">5</span></span>
+                    </div>
+                    <p id="results-message" class="results-message"></p>
+                    <button id="restart-quiz" class="btn btn-primary">Пройти заново</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Автор методологии: Настасья Белочкина (HyperScript) • ТС «Европа» • 2026</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
